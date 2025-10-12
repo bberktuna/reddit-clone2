@@ -1,5 +1,5 @@
-import PostListItem from "../../components/PostListItem"
-import posts from "../../../assets/data/posts.json"
+import PostListItem from "../../../components/PostListItem"
+import posts from "../../../../assets/data/posts.json"
 import { View } from "react-native"
 import { FlatList } from "react-native"
 
