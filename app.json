@@ -2,12 +2,19 @@
   "expo": {
     "name": "reddit-clone",
     "slug": "reddit-clone",
-    "scheme": "RedditClone",
+    "scheme": "reddit-clone",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -29,7 +36,9 @@
     },
     "plugins": [
       "expo-router",
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-font"
     ]
   }
 }

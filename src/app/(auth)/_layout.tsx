@@ -1,4 +1,4 @@
-import { Redirect, Stack } from "expo-router"
+import { Stack, Redirect } from "expo-router"
 import { useAuth } from "@clerk/clerk-expo"
 
 export default function AuthRoutesLayout() {
@@ -9,9 +9,19 @@ export default function AuthRoutesLayout() {
   }
 
   return (
-    <Stack screenOptions={{ headerBackButtonDisplayMode: "minimal" }}>
-      <Stack.Screen name="signIn" options={{ title: "Sign In" }} />
-      <Stack.Screen name="signUp" options={{ title: "Sign Up" }} />
+    <Stack>
+      <Stack.Screen
+        name="signIn"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="signUp"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   )
 }
